@@ -11,6 +11,11 @@ const Login = (props) => {
   const [passwordIsValid, setPasswordIsValid] = useState();
   const [formIsValid, setFormIsValid] = useState(false);
 
+  // only for test
+  useEffect(() => {
+    console.log("Effect running");
+  }, [enteredPassword]);
+
   useEffect(() => {
     console.log('Checking form validity');
 
